@@ -1,2 +1,39 @@
-# HighThroughputOpticalPhysiology
+# High Throughput Optical Physiology
 Code companion to https://www.biorxiv.org/content/10.1101/2024.12.23.629904v1. Includes peakFinder.R, an automated peak detection algorithm for fluorescence transient analysis. Copyright 2024, University of Maryland, Baltimore. All rights reserved. Patent pending.
+
+
+**What is the purpose of this repository?**
+The goal of this repository is leverage the intensity-based glutamate sensing fluorescent reporter (iGluSnFR3) for synaptic physiology, at scale.
+We achieve this with three key innovations.
+1) Automated data acquisition by coordinating hardware via Python.
+2) Automated segmentation of synapses via iGluSnFR3 activity or a fluorescent marker (using SynQuant).
+3) Automated correction and normalization of intensity-time traces and extraction of fluorescence transients for downstream analysis.
+
+**What is contained in this repository?**
+_Automated segmentation via activity or marker_
+A pipeline of macros in ImageJ macro language and MATLAB. See iGlu_activitySegmentation/ and iGlu_markerSegmentation/.
+
+_Automated trace normalization and peak extraction_
+A standalone _R_ script which accepts an arbitrary number of .csv files across an arbitrary number of subdirectories. So long as the traces can be discriminated on the basis of sufficient string variables, _peakFinder.R_ automatically extracts iGluSnFR3 transients and normalizes traces via an iterative baseline identification algorithm predicated on a median filter. _peakFinder.R_ is also viable for calcium sensors, but performs baseline correction using a percentile filter. This repository will be actively maintained according to the needs of the user base and we will strive to be responsive to user inquiries.  
+
+_Demo scripts to produce the Figures in the manuscript_
+_R_ has a number of packages which make publication-quality data visualization very accessible. All data in this manuscript was analyzed and visualized using custom _R_ scripts. We provide access to the original datasets and the bespoke analysis scripts to produce all the figures in the manuscript. As advanced users will observe, there are a number of sub-functions which carry out small actions on the dataset. The terminal scripts for each "peak annotation module" are master scripts which manipulate the dataset, extract summary statistics, and plot the data. If you appreciate the visualizations in this manuscript and are feeling brave, we invite you to inspect the scripts and take the visualizations you like. We anticipate that certain scripts, like _tracePlotter.R_, will be handy for a variety of users for getting high-quality graphs of activity for each ROI and debugging.
+
+**How do I use the code in this repository?**
+_Automated segmentation_
+To use activity-based segmentation, you will need a MATLAB instance, as the code for frequency-domain filtering of iGluSnFR recordings was originally written by Phillipe Mendonça in MATLAB (see Mendonça, et al. _Nature Communications_, 2021). 
+To use marker-based segmentation, you will need to install SynQuant and Fast4DReg in ImageJ (or FIJI).
+
+_Automated trace normalization and peak extraction_
+To use _peakFinder.R_, you will need to download R and RStudio (https://posit.co/download/rstudio-desktop/). The code takes advantage of a few dozen packages for data manipulation, curve-fitting, and data visualization which you can install in RStudio. The command for installing these packages is written into _run_peakFinder.R_.  
+
+_Demo scripts to produce the Figures in the manuscript_
+Follow the same instructions as for _peakFinder.R_.
+
+**COMING SOON**
+1) Detailed README files to help users leverage the full pipeline.
+2) _fileManipulate.R_
+3) Demo scripts for Figure 2, 3, 4, and 6.
+4) Demo datasets for _peakFinder.R_
+
+
