@@ -3,7 +3,7 @@
 //Analyze particles...
 //Enlarge
 //and saves out the ROIs as a separate zip file (here, ROIs.zip) in a subdirectory named after the input file + _ROImaps
-//This macro intends to threshold only the top 1% of pixels. 
+//This macro intends to threshold only the top 3% of pixels. 
 //User should identify reasonable threshold prior to running batch based on the dataset.
 
 
