@@ -32,12 +32,19 @@ Follow the same instructions as for _peakFinder.R_.
 
 
 **How long will it take me to get started using this code repository?**
-TBD
+Downloading and installing R, RStudio, and installing dependcy libraries: <br/>
+Running _peakFinder.R_ on the demo dataset: 2 minutes <br/>
+Running the analysis to generate Figure 5: 3.5 minutes <br/>
+Running the analysis to generate Figure 6: 7.5 minutes <br/>
+
+**Help! I can't find the demo datasets!**
+_Data for peakFinder.R_: https://drive.google.com/drive/folders/1_Mm8QNhFO6zKyGGvtbehgSkhrEo5kW_H?usp=drive_link  <br/>
+_Data for Figure 5_: https://drive.google.com/drive/folders/1ENJNOxWQrlXi2OHbr8fbtA3porr2fKp0?usp=drive_link <br/>
+_Data for Figure 6_: https://drive.google.com/drive/folders/19ac_NfB_gWiH5fPiM7eQ7aH5aw4GKAwd?usp=drive_link <br/>
 
 **COMING SOON**
 1) Detailed README files to help users leverage the full pipeline.
 2) _fileManipulate.R_, for scalable manipulation of directories and filenames.
-3) Demo scripts for Figure 2, 3, 4, and 6.
-4) Demo datasets for _peakFinder.R_
+3) Demo scripts for Figure 2, 3, 4.
 
 
