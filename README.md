@@ -10,24 +10,24 @@ We achieve this with three key innovations.
 3) Automated correction and normalization of intensity-time traces and extraction of fluorescence transients for downstream analysis.
 
 **What is contained in this repository?**
-1) _Automated segmentation via activity or marker_:  br /
-A pipeline of macros in ImageJ macro language and MATLAB. See iGlu_activitySegmentation/ and iGlu_markerSegmentation/.  br /
+1) _Automated segmentation via activity or marker_:  <br/>
+A pipeline of macros in ImageJ macro language and MATLAB. See iGlu_activitySegmentation/ and iGlu_markerSegmentation/.  <br/>
 
-2) _Automated trace normalization and peak extraction_:  br /
-A standalone _R_ script which accepts an arbitrary number of .csv files across an arbitrary number of subdirectories. So long as the traces can be discriminated on the basis of sufficient string variables, _peakFinder.R_ automatically extracts iGluSnFR3 transients and normalizes traces via an iterative baseline identification algorithm predicated on a median filter. _peakFinder.R_ is also viable for calcium sensors, but performs baseline correction using a percentile filter. This repository will be actively maintained according to the needs of the user base and we will strive to be responsive to user inquiries.  br /  
+2) _Automated trace normalization and peak extraction_:  <br/>
+A standalone _R_ script which accepts an arbitrary number of .csv files across an arbitrary number of subdirectories. So long as the traces can be discriminated on the basis of sufficient string variables, _peakFinder.R_ automatically extracts iGluSnFR3 transients and normalizes traces via an iterative baseline identification algorithm predicated on a median filter. _peakFinder.R_ is also viable for calcium sensors, but performs baseline correction using a percentile filter. This repository will be actively maintained according to the needs of the user base and we will strive to be responsive to user inquiries.  <br/>  
 
-3) _Demo scripts to produce the Figures in the manuscript_:  br /
-_R_ has a number of packages which make publication-quality data visualization very accessible. All data in this manuscript was analyzed and visualized using custom _R_ scripts. We provide access to the original datasets and the bespoke analysis scripts to produce all the figures in the manuscript. As advanced users will observe, there are a number of sub-functions which carry out small actions on the dataset. The terminal scripts for each "peak annotation module" are master scripts which manipulate the dataset, extract summary statistics, and plot the data. If you appreciate the visualizations in this manuscript and are feeling brave, we invite you to inspect the scripts and take the visualizations you like. We anticipate that certain scripts, like _tracePlotter.R_, will be handy for a variety of users for getting high-quality graphs of activity for each ROI and debugging.  br /
+3) _Demo scripts to produce the Figures in the manuscript_:  <br/>
+_R_ has a number of packages which make publication-quality data visualization very accessible. All data in this manuscript was analyzed and visualized using custom _R_ scripts. We provide access to the original datasets and the bespoke analysis scripts to produce all the figures in the manuscript. As advanced users will observe, there are a number of sub-functions which carry out small actions on the dataset. The terminal scripts for each "peak annotation module" are master scripts which manipulate the dataset, extract summary statistics, and plot the data. If you appreciate the visualizations in this manuscript and are feeling brave, we invite you to inspect the scripts and take the visualizations you like. We anticipate that certain scripts, like _tracePlotter.R_, will be handy for a variety of users for getting high-quality graphs of activity for each ROI and debugging.  <br/>
 
 **How do I use the code in this repository?**
-1) _Automated segmentation_:  br /
+1) _Automated segmentation_:  <br/>
 To use activity-based segmentation, you will need a MATLAB instance, as the code for frequency-domain filtering of iGluSnFR recordings was originally written by Phillipe Mendonça in MATLAB (see Mendonça, et al. _Nature Communications_, 2021). 
 To use marker-based segmentation, you will need to install SynQuant and Fast4DReg in ImageJ (or FIJI).
 
-2) _Automated trace normalization and peak extraction_:  br /
+2) _Automated trace normalization and peak extraction_:  <br/>
 To use _peakFinder.R_, you will need to download R and RStudio (https://posit.co/download/rstudio-desktop/). The code takes advantage of a few dozen packages for data manipulation, curve-fitting, and data visualization which you can install in RStudio. The command for installing these packages is written into _run_peakFinder.R_.  
 
-3) _Demo scripts to produce the Figures in the manuscript_:  br /
+3) _Demo scripts to produce the Figures in the manuscript_:  <br/>
 Follow the same instructions as for _peakFinder.R_.
 
 **COMING SOON**
