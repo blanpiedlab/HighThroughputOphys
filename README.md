@@ -3,11 +3,14 @@ Code companion to https://www.biorxiv.org/content/10.1101/2024.12.23.629904v1. I
 
 
 **What is the purpose of this repository?** <br/>
-The goal of this repository is leverage the intensity-based glutamate sensing fluorescent reporter (iGluSnFR3) for synaptic physiology, at scale. Our approach is also compatible with calcium imaging, but this may require additional development. We will strive to be responsive to users to help enable the pipeline for other fluorescent sensors. 
-We achieve this with three key innovations.
+The goal of this repository is leverage the intensity-based glutamate sensing fluorescent reporter (iGluSnFR3) for synaptic physiology, at scale. <br/>  
+We achieve this with three key innovations. <br/>
+
 1) Automated data acquisition by coordinating hardware via Python.
 2) Automated segmentation of synapses via iGluSnFR3 activity or a fluorescent marker (using SynQuant).
 3) Automated correction and normalization of intensity-time traces and extraction of fluorescence transients for downstream analysis.
+
+NOTE: Our approach is also compatible with calcium imaging, but this may require additional development. We will strive to be responsive to users to help enable the pipeline for other fluorescent sensors. <br/>
 
 **What is contained in this repository?**
 1) _Automated segmentation via activity or marker_:  <br/>
