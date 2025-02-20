@@ -42,8 +42,8 @@ Running the analysis to generate Figure 6: 7.5 minutes <br/>
 
 **What software versions has this been tested on?** <br/>
 _R-4.4.2_ and the most recent version of _RStudio_. <br/>
-_MATLAB 2021_ <br/>
-The most recent version of FIJI <br/> 
+_MATLAB 2019b_, _MATLAB 2021_, _MATLAB 2022_. We will help troubleshoot activity segmentation for users with different versions of MATLAB. The script will require a paid license for MATLAB. <br/>
+The most recent version of FIJI. Download at: https://imagej.net/software/fiji/ <br/> 
 
 **Help! I can't find the demo datasets!** <br/>
 _Data for peakFinder.R_: https://drive.google.com/drive/folders/1_Mm8QNhFO6zKyGGvtbehgSkhrEo5kW_H?usp=sharing  <br/>
