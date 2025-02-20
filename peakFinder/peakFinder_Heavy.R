@@ -47,7 +47,7 @@ if (length(dataset_id) > 1) {
 						enter = ceiling(2.5*rise_time/interFrame)
 						exit = ceiling(2.5*full_decay_time/interFrame)
 				} else {
-						rise_time = 0.0193
+						rise_time = 0.03
 						full_decay_time = 0.10
 
 						window = ceiling(minimum_window_duration/interFrame)
@@ -61,7 +61,7 @@ if (length(dataset_id) > 1) {
 
 	} else if (dataset_id == "GluSnFR3") {
 		print(paste0("Flagging outliers for a dataset collected with a fast sensor : ", dataset_id))
-		rise_time = 0.0193
+		rise_time = 0.03
 		full_decay_time = 0.120
 
 
