@@ -40,6 +40,11 @@ Running _peakFinder.R_ on the demo dataset: 2.5 minutes <br/>
 Running the analysis to generate Figure 5: 3.5 minutes <br/>
 Running the analysis to generate Figure 6: 7.5 minutes <br/>
 
+**What software versions has this been tested on?** <br/>
+_R-4.4.2_ and the most recent version of _RStudio_. <br/>
+_MATLAB 2021_ <br/>
+The most recent version of FIJI <br/> 
+
 **Help! I can't find the demo datasets!** <br/>
 _Data for peakFinder.R_: https://drive.google.com/drive/folders/1_Mm8QNhFO6zKyGGvtbehgSkhrEo5kW_H?usp=sharing  <br/>
 _Data for Figure 5_: https://drive.google.com/drive/folders/1ENJNOxWQrlXi2OHbr8fbtA3porr2fKp0?usp=sharing <br/>
