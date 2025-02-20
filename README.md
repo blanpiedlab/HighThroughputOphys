@@ -35,8 +35,8 @@ Follow the same instructions as for _peakFinder.R_.
 
 
 **How long will it take me to get started using this code repository?**
-Downloading and installing R, RStudio, and installing dependcy libraries: <br/>
-Running _peakFinder.R_ on the demo dataset: 2 minutes <br/>
+Downloading and installing R, RStudio, and installing dependency libraries: < 15 minutes <br/>
+Running _peakFinder.R_ on the demo dataset: 2.5 minutes <br/>
 Running the analysis to generate Figure 5: 3.5 minutes <br/>
 Running the analysis to generate Figure 6: 7.5 minutes <br/>
 
