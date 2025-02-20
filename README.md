@@ -34,7 +34,7 @@ To use _peakFinder.R_, you will need to download R and RStudio (https://posit.co
 Follow the same instructions as for _peakFinder.R_.
 
 
-**How long will it take me to get started using this code repository?**
+**How long will it take me to get started using this code repository?** <br/>
 Downloading and installing R, RStudio, and installing dependency libraries: < 15 minutes <br/>
 Running _peakFinder.R_ on the demo dataset: 2.5 minutes <br/>
 Running the analysis to generate Figure 5: 3.5 minutes <br/>
