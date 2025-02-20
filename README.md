@@ -30,6 +30,10 @@ To use _peakFinder.R_, you will need to download R and RStudio (https://posit.co
 3) _Demo scripts to produce the Figures in the manuscript_:  <br/>
 Follow the same instructions as for _peakFinder.R_.
 
+
+**How long will it take me to get started using this code repository?**
+TBD
+
 **COMING SOON**
 1) Detailed README files to help users leverage the full pipeline.
 2) _fileManipulate.R_, for scalable manipulation of directories and filenames.
