@@ -41,9 +41,9 @@ Running the analysis to generate Figure 5: 3.5 minutes <br/>
 Running the analysis to generate Figure 6: 7.5 minutes <br/>
 
 **Help! I can't find the demo datasets!** <br/>
-_Data for peakFinder.R_: https://drive.google.com/drive/folders/1_Mm8QNhFO6zKyGGvtbehgSkhrEo5kW_H?usp=drive_link  <br/>
-_Data for Figure 5_: https://drive.google.com/drive/folders/1ENJNOxWQrlXi2OHbr8fbtA3porr2fKp0?usp=drive_link <br/>
-_Data for Figure 6_: https://drive.google.com/drive/folders/19ac_NfB_gWiH5fPiM7eQ7aH5aw4GKAwd?usp=drive_link <br/>
+_Data for peakFinder.R_: https://drive.google.com/drive/folders/1_Mm8QNhFO6zKyGGvtbehgSkhrEo5kW_H?usp=sharing  <br/>
+_Data for Figure 5_: https://drive.google.com/drive/folders/1ENJNOxWQrlXi2OHbr8fbtA3porr2fKp0?usp=sharing <br/>
+_Data for Figure 6_: https://drive.google.com/drive/folders/19ac_NfB_gWiH5fPiM7eQ7aH5aw4GKAwd?usp=sharing <br/>
 
 **COMING SOON**
 1) Detailed README files to help users leverage the full pipeline.
