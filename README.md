@@ -2,7 +2,7 @@
 Code companion to https://www.biorxiv.org/content/10.1101/2024.12.23.629904v1. Includes peakFinder.R, an automated peak detection algorithm for fluorescence transient analysis. Copyright 2024, University of Maryland, Baltimore. All rights reserved. Patent pending.
 
 
-**What is the purpose of this repository?**
+**What is the purpose of this repository?** <br/>
 The goal of this repository is leverage the intensity-based glutamate sensing fluorescent reporter (iGluSnFR3) for synaptic physiology, at scale.
 We achieve this with three key innovations.
 1) Automated data acquisition by coordinating hardware via Python.
