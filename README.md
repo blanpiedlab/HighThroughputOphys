@@ -14,7 +14,7 @@ NOTE: Our approach is also compatible with calcium imaging, but this may require
 
 **What is contained in this repository?**
 1) _Automated segmentation via activity or marker_:  <br/>
-A pipeline of macros in ImageJ macro language and MATLAB. See iGlu_activitySegmentation/ and iGlu_markerSegmentation/.  <br/>
+A pipeline of macros in ImageJ macro language and MATLAB. See iGlu_activitySegmentation/.  <br/>
 
 2) _Automated trace normalization and peak extraction_:  <br/>
 A standalone _R_ script which accepts an arbitrary number of .csv files across an arbitrary number of subdirectories. So long as the traces can be discriminated on the basis of sufficient string variables, _peakFinder.R_ automatically extracts iGluSnFR3 transients and normalizes traces via an iterative baseline identification algorithm predicated on a median filter. _peakFinder.R_ is also viable for calcium sensors, but performs baseline correction using a percentile filter. This repository will be actively maintained according to the needs of the user base and we will strive to be responsive to user inquiries.  <br/>  
