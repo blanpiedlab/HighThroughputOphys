@@ -6,7 +6,7 @@
 # Second, each .csv file is read into R as a data.frame, a few columns are appended, and the modified data.frame is then saved into a new subdirectory with the suffix "_stamped". 
 
 
-renameFunc<- function(folder) {
+rename_csv<- function(folder) {
               path=setwd(folder)
               path=setwd(folder) ##Calling this twice in a row fixes a weird bug where it lags the folder rename by 1 because it's calling the primary_folder as the initial subdirectory
               
@@ -62,7 +62,7 @@ primary_folder = dir
 subfolders = grep(pattern="_Results",list.dirs(primary_folder,  full.names = T, recursive = T), value = T)
 
 
-lapply(subfolders, renameFunc)
+lapply(subfolders, rename_csv)
 
 
 
