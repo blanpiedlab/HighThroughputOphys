@@ -18,7 +18,7 @@
 #The remainder of the global variables need not be manipulated unless the user has adjusted prior steps in the pipeline.
 
 
-
+#uncomment lines 22 and 23 if you have not run this script before
 #list_of_packages(c('plyr','dplyr','gridExtra','zoo','tidyr','reshape2','stringr','readr','purrr','tools','tictoc','sjmisc'))
 #install.packages(list_of_packages)
 
