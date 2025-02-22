@@ -10,6 +10,7 @@
 
 #This script requires the user to specify a few details.
 # path - the path to the code repository. please specify the outer shell of the directory (e.g. from Github, Drive:\YourPath\HighThroughputOphys-main)
+# NOTE: There is a character limit of ~244 characters in a file path. Paths longer than 244 characters will throw and error as R cannot read the files. Consider renaming your directory to limit the number of characters. 
 # dir - the path to your dataset to be processed. This will be the .csv file directory containing the folder "ROIoutputs". 
 # NOTE: The script is expecting to find a directory called "ROIoutputs" so that it can recurse into it for all of the .csv files. Do not specify your dir as a subdirectory below "ROIoutputs". 
 # frameTime - this should be given in seconds.
