@@ -37,7 +37,7 @@ setwd(dataDir)
 
 
 ### set your figure directory
-mainDir <- "YourDrive:\\HighThroughputOphys-main/demos/run_Figure5/Figures_dir"
+mainDir = "YourDrive:\\HighThroughputOphys-main/demos/run_Figure5/Figures_dir"
 png_dir = "YourDrive:\\HighThroughputOphys-main/demos/run_Figure5/zstackOutputs"
 
 
