@@ -1,39 +1,7 @@
-#peak_annotation_module.R
+#peak_annotation_module_PairedPulse_Figure5.R
 
 #Written by Samuel T Barlow
 # current as of 2/19/2025
-
-# At present, this module goes through most of the typical paces of an analysis session.
-# From annotated, per stimulus paradigm, "master" .csv files with peaks identified, we can:
-# 1) perform an exponential decay fit of every identified peak and ensure that each fit passes a quality check (monotonically decreasing)
-# 2) apply additional identifiers to the data.frame, including "ROI_keys" (for sorting procedures that depend on unique ROIs, e.g. what was the cumulative dF/F at each ROI according to stimulus paradigm?),
-#																"stimKeys"(for characterizing stimulus trains on a per video basis),
-#																"epoch_keys" (for characterizing what is going on in each stimulus window)
-# 3) Output a subset of all traces along with characterized peaks. Currently, this is set to 50. It's possible that this should be set by the user outside of the script shell.
-# 4) mutate a specific sorting column(s) to allow for an interaction. Here, I wanted to sort data based on neuron segment (axon or dendrite) AND Ca2+ condition (0.5mMCa,1mMCa...) for visualizing how traces change with each defined condition. This is flexible. 
-# 5) Averaged traces. averageTraces.R takes the data.frame, chops off the first few frames to get us right up next to the stimulus, and then averages all the existing traces together while plotting the unique traces in the background (by ROI_keys). 
-#	 This is handy because you can see the macro-level behavior of the neurons under different bath/imaging/protocol conditons. In the background, I've added a color-coded ribbon that tells you which stimulus epoch we're in - this is handy because we can see 
-#	 the behavior of the stimEpochs assignment. It works! 
-
-
-# At this point, the module has been explicitly tested across the following stimulus paradigms: BasalRP, PP100, PP500, PP1000, 1Hz, 2Hz, 5Hz. I anticipate that it will work without any errors on PP50 and PP2500. 
-# This script will not work on 10Hz or 20Hz (more massaging needed there.).
-
-
-
-# The current final output of this script is the data.frame, fitsLabeled_timeClass_stimKeyed_mutated. 
-
-# Currently omitted from this script is the half-width determination for every peak, and individual peak plotting, which go hand in hand. With the present dataset, half-width determinations are problematic because of the TTL_start effect I am seeing:
-# briefly, when Fusion fires the TTL using the Spare Trigger, the frame at which this occurs takes 10 times longer. This is introducing imaging artifacts into the first peak in a stimulus paradigm, especially apparent in BasalRP paradigms. 
-# So I will not be re-implementing half_widths.R until I have fixed my acquisitions.   
-
-
-
-
-
-
-
-#tic()
 
 ##### if this is your first session in R, please uncomment the install.packages() list
 
