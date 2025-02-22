@@ -31,7 +31,7 @@ library("RColorBrewer")
 
 ## Specify the path to the script directory here. 
 
-path = "Z:\\R Scripts/Github_repo/"
+path = "YourDrive:\\HighThroughputOphys-main/"
 
 
 
@@ -39,16 +39,16 @@ path = "Z:\\R Scripts/Github_repo/"
 
 # set working directory
 #Please find the dataset for this script at this link: https://drive.google.com/drive/folders/1ENJNOxWQrlXi2OHbr8fbtA3porr2fKp0?usp=drive_link
-dataDir = "Z:\\R Scripts/Github_repo/annotated_csv_Figure5_analysis"
+dataDir = "YourDrive:\\HighThroughputOphys-main/annotated_csv_Figure5_analysis"
 
 setwd(dataDir)
 
 
 ###set your figure directory
 
-PP_mainDir <- "Z:\\R Scripts/Github_repo/demos/run_Figure5/Figures_dir"
+PP_mainDir <- "YourDrive:\\HighThroughputOphys-main/demos/run_Figure5/Figures_dir"
 mainDir = PP_mainDir
-png_dir = "Z:\\R Scripts/Github_repo/demos/run_Figure5/zstackOutputs"
+png_dir = "YourDrive:\\HighThroughputOphys-main/demos/run_Figure5/zstackOutputs"
 
 
 
