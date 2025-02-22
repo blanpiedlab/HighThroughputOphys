@@ -9,11 +9,11 @@
 #list_of_packages = c('plyr','dplyr','ggplot2','zoo','ggthemes','tidyr','reshape2','stringr','readr','purrr','extrafont','tictoc','broom','gridExtra','gsignal','ggeasy','scales')
 #install.packages(list_of_packages)
 
+library(tictoc)
 
 path = "YourDrive:\\HighThroughputOphys-main/"
 
 
-library(tictoc)
 
 # set working directory
 # Please find the data at the following link: https://drive.google.com/drive/folders/1_Mm8QNhFO6zKyGGvtbehgSkhrEo5kW_H?usp=drive_link
