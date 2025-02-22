@@ -38,21 +38,21 @@ scalefactor=1
 
 
 #set path for R scripts
-path = "Z:\\R Scripts/Github_repo/"
+path = "YourDrive:\\HighThroughputOphys-main/"
 
 
 # set directory for annotated_csv
-# Please find the data at the following link: https://drive.google.com/drive/folders/19ac_NfB_gWiH5fPiM7eQ7aH5aw4GKAwd?usp=drive_link
-dataDir = "Z:\\R Scripts/Github_repo/annotated_csv_Figure6_analysis"
+# Please find the data at the bottom of the README
+dataDir = "YourDrive:\\HighThroughputOphys-main/annotated_csv_Figure6_analysis"
 setwd(dataDir)
 filenames = list.files(pattern=".csv")
 
 
 #set directory for figures
-mainDir <- "Z:\\R Scripts/Github_repo/demos/run_Figure6/Figures_dir"
+mainDir <- "YourDrive:\\HighThroughputOphys-main/demos/run_Figure6/Figures_dir"
 
 #set path to find the .png files for spatial mapping
-png_path = "Z:\\R Scripts/Github_repo/demos/run_Figure6/png_dir"
+png_path = "YourDrive:\\HighThroughputOphys-main/demos/run_Figure6/png_dir"
 
 tic()
 
