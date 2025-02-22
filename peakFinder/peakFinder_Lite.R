@@ -9,8 +9,7 @@
 ## By blending data.frame manipulations from read_and_flagOutliers.R, we will estimate a baseline using a window (25 or 50 frames?) where only
 ## the indices marked "notPeak" are used.  
 
-source(paste0(path,"/peakAnalysis/save_plot_as_jpeg_and_emf.R"))
-#source("Z:\\R Scripts/Sam current as of 7.28.22/Active scripts/pipeline v5 - generalized/peakAnalysis/save_plot_as_jpeg_and_emf.R")
+source(paste0(path,"peakAnalysis/save_plot_as_jpeg_and_emf.R"))
 
 #suppress warnings
 oldw <- getOption("warn")
@@ -21,14 +20,6 @@ library(gsignal)
 
 
 
-
-dataset_id = unique(peaksHeavy$sensor)
-# if(unique(peaksHeavy$segmentation) %in% c("activityGlu","marker")){
-# 	print("toggling short peaks")
-# 	toggle_short_peaks = TRUE
-# } else {
-# 	print("toggling long peaks")
-# 	toggle_short_peaks = FALSE }
 interFrame = mean(peaksHeavy$interFrame,na.rm=TRUE)
 minimum_window_duration = 0.75 #seconds
 k=3
@@ -307,14 +298,11 @@ if(savePlots == TRUE) {
 
 
 	#set figure directory with mainDir and subDirs articulated in run_pipeline_v3.R
-	source(paste0(path,"/sub-functions/setFigureDirectory.R"))
-	source(paste0(path,"/sub-functions/myTheme.R"))
-	#source("Z:\\R Scripts/Sam current as of 7.28.22/Active scripts/pipeline v5 - generalized/sub-functions/setFigureDirectory.R") 
-	#source("Z:\\R Scripts/Sam current as of 7.28.22/Active scripts/pipeline v5 - generalized/sub-functions/myTheme.R")
+	source(paste0(path,"sub-functions/setFigureDirectory.R"))
+	source(paste0(path,"sub-functions/myTheme.R"))
 	
 
-	#do things
-	#want to save out schmitt Trigg 3 essentially
+	
 
 	.ROI_keyvars = rlang::syms(ROI_keys)
 	tmp_df<- peaks %>% mutate(ROI_keys = paste(!!!.ROI_keyvars, sep="-"))
