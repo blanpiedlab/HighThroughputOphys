@@ -96,8 +96,8 @@ data_flagged = suppressMessages(left_join(data_smooth,getTrace.stdev) %>%
 
 
 # 	#set figure directory with mainDir and subDirs articulated in run_pipeline_v3.R
-# 	source("Z:\\R Scripts/Sam current as of 7.28.22/Active scripts/pipeline v5 - generalized/sub-functions/setFigureDirectory.R") 
-# 	source("Z:\\R Scripts/Sam current as of 7.28.22/Active scripts/pipeline v5 - generalized/sub-functions/myTheme_peakFinder_outputs.R") 
+# 	source("YourDrive:\\HighThroughputOphys-main/sub-functions/setFigureDirectory.R") 
+# 	source("YourDrive:\\HighThroughputOphys-main/sub-functions/myTheme_peakFinder_outputs.R") 
 	
 
 # 	#do things
