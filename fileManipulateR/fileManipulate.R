@@ -1,6 +1,6 @@
 
 #Written Samuel T Barlow 2.21.2025
-#fileManipuleR_lite_v1.R is a function wrapper which can coerce Frame-Intensity files from ImageJ into the preferred format for peakFinder.R.
+#fileManipulate.R is a function wrapper which can coerce Frame-Intensity files from ImageJ into the preferred format for peakFinder.R.
 #The script performs two functions:
 # 1. the script reads in all the .csv files containing Frame and Intensity data and staples a few expected columns to the data frame. These are: 
 #    fileID - the title of the subdirectory from which the file was read
