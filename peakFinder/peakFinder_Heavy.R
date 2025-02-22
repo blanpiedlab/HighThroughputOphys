@@ -173,8 +173,7 @@ toc()
 
 tic()
 
-source(paste0(path,"/sub-functions/schmittTrig_v2.R"))
-#source("Z:\\R Scripts/Sam current as of 7.28.22/Active scripts/pipeline v5 - generalized/sub-functions/schmittTrig_v2.R") ## import Schmitt Trigger function with plotting
+source(paste0(path,"sub-functions/schmittTrig_v2.R"))
 
 
 cumplus <- function(y) Reduce(function(a,b) a + b > 0, y, 0, accum=TRUE)[-1]
@@ -239,8 +238,8 @@ toc()
 
 
 # 	#set figure directory with mainDir and subDirs articulated in run_pipeline_v3.R
-# 	source("Z:\\R Scripts/Sam current as of 7.28.22/Active scripts/pipeline v5 - generalized/sub-functions/setFigureDirectory.R") 
-# 	source("Z:\\R Scripts/Sam current as of 7.28.22/Active scripts/pipeline v5 - generalized/sub-functions/myTheme_peakFinder_outputs.R") 
+# 	source(paste0(path,"sub-functions/setFigureDirectory.R")) 
+# 	source(paste0(path,"sub-functions/myTheme_peakFinder_outputs.R")) 
 	
 
 # 	#do things
