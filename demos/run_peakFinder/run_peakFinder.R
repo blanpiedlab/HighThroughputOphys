@@ -14,14 +14,14 @@
 #12.10.24 - changed window duration from 0.75 to 0.2. toggle_long_peaks = TRUE is best for HNK iGluSnFR3 dataset
 
 
-path = "Z:\\R Scripts/Github_repo"
+path = "YourDrive:\\HighThroughputOphys-main"
 
 
 library(tictoc)
 
 # set working directory
 # Please find the data at the following link: https://drive.google.com/drive/folders/1_Mm8QNhFO6zKyGGvtbehgSkhrEo5kW_H?usp=drive_link
-setwd("Z:\\R Scripts/Github_repo/demos/run_peakFinder/demo_data_peakFinder")
+setwd("YourDrive:\\HighThroughputOphys-main/demos/run_peakFinder/demo_data_peakFinder")
 
 segmentedBy = "marker"
 
@@ -39,7 +39,7 @@ groupers =c("sensor","dish","plate", "region","Ca",'protocol','exposeNum',"ROINu
 						
 #if savePlots is TRUE, need to set a directory and number of plots to save out
 savePlots = TRUE
-mainDir <- "Z:\\R Scripts/Github_repo/demos/run_peakFinder/Figures_dir" #set directory for Figures
+mainDir <- "YourDrive:\\HighThroughputOphys-main/demos/run_peakFinder/Figures_dir" #set directory for Figures
 n =10 # a number. Analogous to a dilution factor, this is the (total number of traces) / n. So n=1 would give you 100% of the traces as plots, while n=100 would give you 1% of the traces as plots. 
 # 
 tic()
