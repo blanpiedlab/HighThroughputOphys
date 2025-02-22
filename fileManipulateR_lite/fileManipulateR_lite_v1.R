@@ -39,7 +39,7 @@ library(sjmisc)
 #### USER ADJUSTED PARAMETERS ####
 
 path = "Z:\\R Scripts/Github_repo"
-dir = "Y:\\Sam/test_pipeline/abby_Ca_imaging/abby/test_subset" #data directory
+dir = "Y:\\Sam/test_pipeline/your_data_in_csv_format" #data directory
 frameTime = 0.1#time in seconds that each frame is expected to take. This value is used to interpolate the time points for each frame from the frame index. 
 
 
