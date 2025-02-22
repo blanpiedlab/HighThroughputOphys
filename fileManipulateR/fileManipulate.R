@@ -39,8 +39,8 @@ library(sjmisc)
 
 #### USER ADJUSTED PARAMETERS ####
 
-path = "Z:\\R Scripts/Github_repo"
-dir = "Y:\\Sam/test_pipeline/your_data_in_csv_format" #data directory
+path = "YourDrive:\\Github_repo"
+dir = "YourDrive:\\Data_folder/ROIoutputs/your_data_in_csv_format" #data directory
 frameTime = 0.1#time in seconds that each frame is expected to take. This value is used to interpolate the time points for each indexed frame. 
 
 
