@@ -6,7 +6,6 @@
 ##### if this is your first session in R, please uncomment the install.packages() list
 
 #list_of_packages = c('plyr','dplyr','ggplot2','zoo','ggthemes','tidyr','reshape2','stringr','readr','purrr','extrafont','tictoc','broom','gridExtra','grid','imager','readr','EBImage','bioimagetools')
-
 #install.packages(list_of_packages)
 
 
@@ -29,25 +28,16 @@ library(gridExtra)
 library("RColorBrewer")
 
 
-## Specify the path to the script directory here. 
-
+### Specify the path to the script directory here. 
 path = "YourDrive:\\HighThroughputOphys-main/"
 
-
-
-
-
-# set working directory
-#Please find the dataset for this script at this link: https://drive.google.com/drive/folders/1ENJNOxWQrlXi2OHbr8fbtA3porr2fKp0?usp=drive_link
+### set working directory
 dataDir = "YourDrive:\\HighThroughputOphys-main/annotated_csv_Figure5_analysis"
-
 setwd(dataDir)
 
 
-###set your figure directory
-
-PP_mainDir <- "YourDrive:\\HighThroughputOphys-main/demos/run_Figure5/Figures_dir"
-mainDir = PP_mainDir
+### set your figure directory
+mainDir <- "YourDrive:\\HighThroughputOphys-main/demos/run_Figure5/Figures_dir"
 png_dir = "YourDrive:\\HighThroughputOphys-main/demos/run_Figure5/zstackOutputs"
 
 
@@ -128,20 +118,9 @@ for (item in existing_groupings) {
 					num_APs = 25 # number of action potentials in a train protocol 
 					s88x_offset = 0.050 #50 ms offset 
 
-
 					df = df_mutated
-
-
-
-
 					source(paste0(path, "peakAnalysis/getStimList_v2.R"))
-					
 					rm(window_keys,ROI_keys,groupers)
-
-
-
-
-					
 
 
 
