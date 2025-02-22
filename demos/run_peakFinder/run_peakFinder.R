@@ -14,7 +14,7 @@
 #12.10.24 - changed window duration from 0.75 to 0.2. toggle_long_peaks = TRUE is best for HNK iGluSnFR3 dataset
 
 
-path = "YourDrive:\\HighThroughputOphys-main"
+path = "YourDrive:\\HighThroughputOphys-main/"
 
 
 library(tictoc)
@@ -43,5 +43,5 @@ mainDir <- "YourDrive:\\HighThroughputOphys-main/demos/run_peakFinder/Figures_di
 n =10 # a number. Analogous to a dilution factor, this is the (total number of traces) / n. So n=1 would give you 100% of the traces as plots, while n=100 would give you 1% of the traces as plots. 
 # 
 tic()
-source(paste0(path,"/peakFinder/peakFinder.R"))
+source(paste0(path,"peakFinder/peakFinder.R"))
 toc()				
