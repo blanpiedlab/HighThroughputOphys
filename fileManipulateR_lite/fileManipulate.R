@@ -57,5 +57,5 @@ subfolders_fixed = str_remove(subfolders, pattern = pattern1)
 newFilePat = "ROI\\d\\d\\d\\d"
           
 tic()
-source(paste0(path, "/fileManipulateR/fileRename_lite.R")) ##only run this if you need to rename files still; converts all ROIs to uniform numbering
+source(paste0(path, "/fileManipulateR/fileRename.R")) ##only run this if you need to rename files still; converts all ROIs to uniform numbering
 toc()
