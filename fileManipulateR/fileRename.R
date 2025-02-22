@@ -36,7 +36,7 @@ read_and_write_csv<- function(file,folder, exposureTime){
                   newFolder <- paste0(folder_name_fixed,"_stamped/")  #create the save folder for these stamped ROIs
                   dir.create(newFolder)
                   
-                  print(paste0("This is the source info ", source_info))
+                  #print(paste0("This is the source info ", source_info))
                   
                   tmp_file<- read.csv(file = file,header=TRUE) 
                   colnames(tmp_file)[1]<- "Frame"
