@@ -1,4 +1,27 @@
+#fileRename.R
+#Written by Samuel T. Barlow 
 
+# fileRename.R carries out two functions: 
+# First, it renames all .csv files in a destination as an ROI number with 4 digits. This makes file ordering during analysis more sensible. 
+# Second, each .csv file is read into R as a data.frame, a few columns are appended, and the modified data.frame is then saved into a new subdirectory with the suffix "_stamped". 
+
+
+renameFunc<- function(folder) {
+              path=setwd(folder)
+              path=setwd(folder) ##Calling this twice in a row fixes a weird bug where it lags the folder rename by 1 because it's calling the primary_folder as the initial subdirectory
+              
+              filenames<- list.files(pattern="ROI", full.names=TRUE,  recursive=F)
+              details = file.info(filenames)
+              details = details[with(details, order(as.POSIXct(mtime))),] #This line orders the files by the time they were created (ROI indexing)
+              files = rownames(details)
+
+              placeholder = basename(path)
+            
+              b<- sprintf("%s_ROI%04d.csv", placeholder,seq(files)) #Here, sprintf is adding padding zeros to normalize the data read
+              file.rename(files,b)
+
+  
+}
 
 
 read_and_write_csv<- function(file,folder, exposureTime){
@@ -31,22 +54,6 @@ read_and_write_csv<- function(file,folder, exposureTime){
                   
 }
 
-renameFunc<- function(folder) {
-              path=setwd(folder)
-              path=setwd(folder) ##Calling this twice in a row fixes a weird bug where it lags the folder rename by 1 because it's calling the primary_folder as the initial subdirectory
-              
-              filenames<- list.files(pattern="ROI", full.names=TRUE,  recursive=F)
-              details = file.info(filenames)
-              details = details[with(details, order(as.POSIXct(mtime))),] #This line orders the files by the time they were created (ROI indexing)
-              files = rownames(details)
-
-              placeholder = basename(path)
-            
-              b<- sprintf("%s_ROI%04d.csv", placeholder,seq(files)) #Here, sprintf is adding padding zeros to normalize the data read
-              file.rename(files,b)
-
-  
-}
 
 
 
