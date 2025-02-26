@@ -6,7 +6,7 @@
 # the goal of this function-wrapper is to minimize my interactions with the code as much as possible and make data analysis, figure generation easier by making peak identification a single-use event for a given dataset. 
 
 ### if you are running this script for the first time, uncomment line 10 and 11. 
-#list_of_packages = c('plyr','dplyr','ggplot2','zoo','ggthemes','tidyr','reshape2','stringr','readr','purrr','extrafont','tictoc','broom','gridExtra','gsignal','ggeasy','scales')
+#list_of_packages = c('plyr','dplyr','ggplot2','zoo','ggthemes','tidyr','reshape2','stringr','readr','purrr','extrafont','tictoc','broom','gridExtra','gsignal','ggeasy','scales','stingi','ggpubr','ggforce','devEMF')
 #install.packages(list_of_packages)
 
 library(tictoc)
