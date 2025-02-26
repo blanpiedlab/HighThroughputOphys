@@ -23,6 +23,7 @@ library(gsignal)
 interFrame = mean(peaksHeavy$interFrame,na.rm=TRUE)
 minimum_window_duration = 0.75 #seconds
 k=3
+dataset_id = unique(peaksHeavy$sensor)
 
 
 if (length(dataset_id) > 1) {
